@@ -51,6 +51,7 @@
     .hero-eyebrow { font-family: 'Arial', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
     .hero-question { font-size: 1.1rem; color: var(--muted); margin-bottom: 0.5rem; font-style: italic; }
     .hero-headline { font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1.15; color: var(--green); margin-bottom: 1.5rem; font-weight: normal; }
+    .hero-slogan { font-size: 1.3rem; font-style: italic; color: var(--gold); margin: -0.6rem 0 1.4rem 0; }
     .hero-body { font-size: 1.05rem; color: var(--text); margin-bottom: 0.8rem; line-height: 1.7; }
     .hero-body strong { color: var(--green); }
     .hero-buttons { display: flex; gap: 1rem; align-items: center; margin-top: 2rem; flex-wrap: wrap; }
@@ -105,6 +106,8 @@
     .cta-main h2 { font-size: 2rem; font-weight: normal; color: var(--dark); margin-bottom: 1rem; line-height: 1.2; }
     .cta-price-wrap { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 0.3rem; }
     .cta-price { font-size: 2.8rem; color: var(--green); }
+    .cta-price-old { font-size: 1.6rem; color: var(--muted); }
+    .hero-offer { font-family: 'Arial', sans-serif; font-size: 0.9rem; color: var(--text); margin-top: 1.2rem; display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
     .cta-intro-badge { font-family: 'Arial', sans-serif; font-size: 0.75rem; background: var(--gold); color: var(--white); padding: 0.2rem 0.6rem; border-radius: 2px; letter-spacing: 0.05em; text-transform: uppercase; }
     .cta-price-note { font-family: 'Arial', sans-serif; font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
     .cta-box-statement { font-family: 'Arial', sans-serif; font-size: 1rem; font-weight: bold; color: var(--text); margin-bottom: 1.5rem; line-height: 1.5; }
@@ -173,13 +176,15 @@
 <section class="hero">
   <div class="hero-text">
     <p class="hero-eyebrow">Rauchfrei Box · Walter Papai</p>
-    <h1 class="hero-headline">Dies ist dein letzter Versuch, mit dem Rauchen aufzuhören</h1>
-    <p class="hero-question" style="font-style:normal; font-size:1.2rem; font-weight:bold; color: var(--green);">Die Box gibt dir alles, was du brauchst, um den nächsten Rückfall zu vermeiden. Jetzt liegt es an dir. Dein Einsatz zählt.</p>
-    <p class="hero-body">Auch das richtige Geschenk für jemanden, dem ihr ein Leben in Freiheit wünscht.</p>
+    <h1 class="hero-headline">Aufhören kann jeder. Rauchfrei bleiben ist die Kunst.</h1>
+    <p class="hero-slogan">Rauchfrei ohne Stuhlkreis.</p>
+    <p class="hero-question" style="font-style:normal; font-size:1.2rem; font-weight:bold; color: var(--green);">Die Box bereitet dich auf die Momente vor, in denen es schwer wird. Jetzt liegt es an dir. Dein Einsatz zählt.</p>
+    <p class="hero-body">Auch das richtige Geschenk für jemanden, dem du ein Leben in Freiheit wünschst.</p>
     <div class="hero-buttons">
-      <a href="#bestellen" class="btn-primary">📦 Box bestellen – 89 €</a>
+      <a href="#bestellen" class="btn-primary">📦 Box bestellen – <s>89 €</s> 59 €</a>
       <a href="#inhalt" class="btn-secondary">Zeig mir wie ↓</a>
     </div>
+    <p class="hero-offer"><span class="cta-intro-badge">Weihnachts- &amp; Silvesterangebot</span> 59 € statt 89 € – bis 31. Januar 2027</p>
   </div>
   <div class="hero-image">
     <img src="box.png" alt="Rauchfrei Box" />
@@ -193,7 +198,7 @@
     <div class="target-card">
       <span class="target-icon">👤</span>
       <p class="target-title">Für dich selbst</p>
-      <p class="target-desc">Du willst es alleine schaffen. Diese Box gibt dir alles was du dafür brauchst.</p>
+      <p class="target-desc">Du willst es ohne Kurs schaffen. Die Box gibt dir das Werkzeug dafür.</p>
     </div>
     <div class="target-card">
       <span class="target-icon">👥</span>
@@ -204,7 +209,7 @@
     <div class="target-card">
       <span class="target-icon">🏢</span>
       <p class="target-title">Für Betriebe im BGM</p>
-      <p class="target-desc">Keinen Organisationsaufwand für Kurse, keinen Arbeitszeitaufwand. Sie bestellen die Boxen – wir kümmern uns um den Rest. Inklusive QR-Aufklebern für Raucherplätze und Infowände.</p>
+      <p class="target-desc">Kein Aufwand für Kurse, keine Arbeitszeit. Du bestellst die Boxen, ich kümmere mich um den Rest – inklusive QR-Aufklebern für Raucherplätze und Infowände. Für Betriebe mache ich ein eigenes Angebot nach Stückzahl.</p>
     </div>
   </div>
 </section>
@@ -215,28 +220,28 @@
   </div>
   <div class="sticker-text">
     <h2 class="section-headline" style="text-align:left; font-size: 1.9rem;">Aufkleber für Raucherplätze</h2>
-    <p class="content-desc">Ein wetterfester QR-Aufkleber, der direkt zur Rauchfrei Box führt – für Raucherplätze und Infowände im Betrieb. Kostenlos, ohne Aufwand für Sie: Sie hängen ihn auf, Ihre Mitarbeitenden scannen ihn selbst und informieren sich in ihrem eigenen Tempo.</p>
+    <p class="content-desc">Ein wetterfester QR-Aufkleber, der direkt zur Rauchfrei Box führt – für Raucherplätze und Infowände im Betrieb. Kostenlos und ohne Aufwand für dich: Du hängst ihn auf, deine Mitarbeitenden scannen ihn und informieren sich in ihrem eigenen Tempo.</p>
     <a href="mailto:walter@soul-sessions.de?subject=Kostenlose%20QR-Aufkleber&body=Firmenname%3A%0AAdresse%3A%0AAnzahl%20gew%C3%BCnschter%20Aufkleber%3A" class="btn-secondary" style="display:inline-block; margin-top:1rem;">Aufkleber kostenlos anfordern</a>
-    <p style="margin-top:1rem;"><a href="Rauchen_am_Arbeitsplatz_Zahlen.pdf" target="_blank" style="font-family:Arial,sans-serif; font-size:1rem; font-weight:bold; color:var(--green); text-decoration:none; border-bottom:2px solid var(--green); padding-bottom:2px;">📄 Was Rauchen Ihr Unternehmen wirklich kostet (PDF)</a></p>
+    <p style="margin-top:1rem;"><a href="Rauchen_am_Arbeitsplatz_Zahlen.pdf" target="_blank" style="font-family:Arial,sans-serif; font-size:1rem; font-weight:bold; color:var(--green); text-decoration:none; border-bottom:2px solid var(--green); padding-bottom:2px;">📄 Was Rauchen dein Unternehmen wirklich kostet (PDF)</a></p>
   </div>
 </section>
 
 <section class="problem">
   <p class="section-eyebrow">Warum so viele scheitern</p>
   <h2 class="section-headline">Von denen, die alleine aufhören, werden über 90 % in den ersten zwei Jahren rückfällig</h2>
-  <p class="section-body">Nicht weil sie schwach sind – sondern weil sie <strong>nicht wissen was im Kopf passiert</strong> und nicht vorbereitet sind wenn der Suchtdruck kommt.</p>
-  <p class="section-body">Die Rauchfrei Box gibt dir Klarheit, Vorbereitung und die richtigen Werkzeuge – <strong>damit du nicht dazugehörst</strong></p>
+  <p class="section-body">Nicht, weil sie schwach sind, sondern weil sie <strong>nicht wissen, was im Kopf passiert</strong>, und nicht vorbereitet sind, wenn der Suchtdruck kommt.</p>
+  <p class="section-body">Die Rauchfrei Box gibt dir Klarheit und die richtigen Werkzeuge – <strong>damit du diesmal vorbereitet bist.</strong></p>
 </section>
 
 <section class="about">
   <div class="about-image">
-    <img src="walter.png" alt="Walter Papai" />
+    <img src="walter-profil.webp" alt="Walter Papai" />
   </div>
   <div class="about-text">
     <p class="about-eyebrow">Begleitung, der du vertrauen kannst</p>
     <h2 class="about-headline">Hallo, ich bin Walter Papai</h2>
-    <p class="about-body">Zertifizierter Rauchfrei-Trainer (IFT), Zertifizierter Focusing-Therapeut (DFI) und seit über 12 Jahren in der Begleitung von Menschen tätig.</p>
-    <p class="about-body">Die Unterlagen in dieser Box basieren auf dem Rauchfrei Programm des IFT München – einem der wenigen wissenschaftlich evaluierten Tabakentwöhnungsprogramme in Deutschland – kombiniert mit meiner eigenen Erfahrung als Trainer und meinem persönlichen Weg aus der Sucht.</p>
+    <p class="about-body">Ich bin zertifizierter Rauchfrei-Trainer (IFT) und Focusing-Therapeut (DFI) und begleite seit über 10 Jahren Menschen.</p>
+    <p class="about-body">Die Unterlagen in dieser Box basieren auf dem Rauchfrei Programm des IFT München – einem der wenigen wissenschaftlich evaluierten Tabakentwöhnungsprogramme in Deutschland –, ergänzt um meine Erfahrung als Trainer und meinen persönlichen Weg aus der Abhängigkeit.</p>
     <p class="about-key">Ich kenne Kontrollverlust nicht aus der Theorie. Rauchfrei bin ich selbst seit 2009 – und ich weiß aus eigener Erfahrung, was es braucht, um in den kritischen ersten Tagen nicht rückfällig zu werden.</p>
     <p class="about-quote">Es ist möglich. Und du musst diesen Weg nicht allein gehen.</p>
     <a href="https://www.soul-sessions.de/ueber-mich.html" target="_blank" style="display:inline-block; margin-top:1.5rem; font-family:Arial,sans-serif; font-size:0.9rem; color:white; border-bottom:1px solid rgba(255,255,255,0.5); padding-bottom:2px; text-decoration:none;">Mehr über mich auf Soul Sessions →</a>
@@ -247,24 +252,24 @@
   <div class="contents-text">
     <p class="section-eyebrow">Das ist in deiner Rauchfrei Box</p>
     <h2 class="section-headline" style="text-align:left; font-size: 1.9rem;">Drei Werkzeuge für deinen Erfolg</h2>
-    <p class="content-desc" style="margin-bottom: 1.5rem;">Um Sucht wirklich zu verstehen, bräuchtest du normalerweise Wochen an Recherche, Fachliteratur oder einen mehrwöchigen Kurs. Diese Box nimmt dir das ab – kompakt, praxisnah, sofort einsetzbar.</p>
+    <p class="content-desc" style="margin-bottom: 1.5rem;">Wie man mit dem Rauchen aufhört, kann man überall nachlesen. Der Unterschied ist, ob du es wirklich durcharbeitest. In der Box hast du alles an einem Stück.</p>
     <ul class="contents-list">
       <li>
         <div class="content-icon">📄</div>
         <div>
           <p class="content-title">2 Unterlagen</p>
-          <p class="content-desc">Eine kompakte aber sehr effektive Zusammenfassung von Walters komplettem Wissen – destilliert aus jahrelanger Erfahrung und umfangreichem Trainermaterial. Statt dich durch Fachbücher oder Wochen voller Kursinhalte zu arbeiten, hast du das Wesentliche in wenigen Seiten – sofort verständlich, sofort anwendbar.</p>
+          <p class="content-desc">Mein Wissen aus vielen Jahren als Trainer, kompakt und einfach geschrieben. Das Wesentliche auf wenigen Seiten – sofort verständlich, sofort anwendbar.</p>
         </div>
       </li>
       <li>
         <div class="content-icon">🧰</div>
         <div>
           <p class="content-title">Notfallkoffer</p>
-          <p class="content-desc">Dein physisches Werkzeug für die Momente wenn der Suchtdruck kommt. Enthält:</p>
+          <p class="content-desc">Dein Werkzeug für die Momente, in denen der Suchtdruck kommt. Darin:</p>
           <div class="content-subitems">
-            <p class="content-subitem"><strong>Zahnstocher</strong> – beschäftigen Hand und Mund und reduzieren so den Suchtdruck gezielt.</p>
-            <p class="content-subitem"><strong>Fisherman's Friend</strong> – der Zucker löst eine leichte Dopaminausschüttung aus, der Mund hat eine Beschäftigung und die Schärfe hilft aus dem Kopf in den Körper zurückzukommen.</p>
-            <p class="content-subitem"><strong>Ammoniakkapsel</strong> – nur bei sehr starkem Suchtdruck, wenn man kurz davor ist sich Zigaretten zu kaufen oder eine anzuzünden. Wirkt als intensiver Gegenreiz. Bitte Beipackzettel vorher lesen.</p>
+            <p class="content-subitem"><strong>Zahnstocher</strong> – beschäftigen Hand und Mund und nehmen dem Suchtdruck die Spitze.</p>
+            <p class="content-subitem"><strong>Fisherman's Friend</strong> – die Süße sorgt für ein kleines Glücksgefühl, der Mund ist beschäftigt, und die Schärfe holt dich aus dem Kopf zurück in den Körper.</p>
+            <p class="content-subitem"><strong>Ammoniakkapsel</strong> – nur bei sehr starkem Suchtdruck, wenn du kurz davor bist, Zigaretten zu kaufen oder dir eine anzuzünden. Wirkt als starker Gegenreiz. Bitte vorher den Beipackzettel lesen.</p>
           </div>
         </div>
       </li>
@@ -272,7 +277,7 @@
         <div class="content-icon">💬</div>
         <div>
           <p class="content-title">Persönliches 15-Minuten-Gespräch</p>
-          <p class="content-desc">Ein echtes, persönliches Gespräch mit Walter – auf Augenhöhe. Raum für deine Fragen, Bedenken und Ängste. Walter zeigt dir persönlich: Es ist möglich – weil er es selbst geschafft hat. Kein Programm, kein Druck. Einfach ein ehrliches Gespräch als Start in deine Rauchfreiheit.</p>
+          <p class="content-desc">Ein persönliches Gespräch mit mir, auf Augenhöhe. Raum für deine Fragen, Bedenken und Ängste. Ich zeige dir: Es ist möglich – ich habe es selbst geschafft. Kein Programm, kein Druck.</p>
         </div>
       </li>
     </ul>
@@ -285,19 +290,21 @@
 <section class="cta" id="bestellen">
   <div class="cta-main">
     <h2>Dein nächster Schritt</h2>
-    <p class="cta-cost-note">Rauchen wird gerade wieder teurer. Die Politik diskutiert aktuell eine weitere Tabaksteuererhöhung – eine Packung könnte in den kommenden Jahren auf bis zu 12 € steigen.</p>
+    <p class="cta-cost-note">Ab 2027 steigt die Tabaksteuer jedes Jahr. Eine durchschnittliche Packung kostet dann laut Prognose des Finanzministeriums rund 9,10 €.</p>
     <table class="cta-cost-table">
-      <tr><td>Eine Packung am Tag</td><td>ca. 12 €</td></tr>
-      <tr><td>Pro Monat</td><td>ca. 365 €</td></tr>
-      <tr><td>Pro Jahr</td><td>ca. 4.380 €</td></tr>
-      <tr class="cta-cost-highlight"><td>Die Rauchfrei Box</td><td>einmalig 89 €</td></tr>
+      <tr><td>Eine Packung am Tag</td><td>ca. 9,10 €</td></tr>
+      <tr><td>Pro Monat</td><td>ca. 275 €</td></tr>
+      <tr><td>Pro Jahr</td><td>ca. 3.300 €</td></tr>
+      <tr class="cta-cost-highlight"><td>Die Rauchfrei Box</td><td>einmalig 59 €</td></tr>
     </table>
     <div class="cta-price-wrap">
-      <p class="cta-price">89 €</p>
+      <p class="cta-price"><s class="cta-price-old">89 €</s> 59 €</p>
+      <span class="cta-intro-badge">Weihnachts- &amp; Silvesterangebot</span>
     </div>
-    <p class="cta-price-note">inkl. MwSt. &amp; Versand · Lieferung per Post</p>
-    <p class="cta-box-statement">Die Box hat alles was du brauchst um alleine aufzuhören.</p>
-    <p class="cta-sub">Solltest du nach der Box und dem Gespräch merken, dass du noch mehr Unterstützung brauchst, melde dich einfach – ich lass dich nicht allein. Für den nächsten Schritt biete ich dir dann eine passende, tiefere Begleitung an.</p>
+    <p class="cta-price-note">Angebot gültig bis 31. Januar 2027</p>
+    <p class="cta-price-note">inkl. Versand · Lieferung per Post</p>
+    <p class="cta-box-statement">Die Box gibt dir Wissen und Werkzeug in die Hand – und mich als Ansprechpartner.</p>
+    <p class="cta-sub">Solltest du nach der Box und dem Gespräch merken, dass du noch mehr Unterstützung brauchst, melde dich einfach – ich lasse dich nicht allein. Für den nächsten Schritt biete ich dir dann eine passende, tiefere Begleitung an.</p>
     <p class="cta-sub">Schreib mir einfach eine Nachricht oder ruf an – du bekommst alle weiteren Infos und kannst direkt bestellen.</p>
     <div class="cta-contact">
       <a href="https://wa.me/491726654461" target="_blank">
@@ -316,7 +323,7 @@
   </div>
   <div class="cta-extra">
     <h3>Wenn du mehr Begleitung möchtest</h3>
-    <p>Für Menschen die tiefer einsteigen oder intensivere Begleitung suchen:</p>
+    <p>Für Menschen, die tiefer einsteigen oder intensivere Begleitung suchen:</p>
     <ul style="list-style: none; margin: 1rem 0; padding: 0;">
       <li style="margin-bottom: 0.8rem; padding-left: 1rem; border-left: 2px solid var(--gold); font-family: Arial, sans-serif; font-size: 0.9rem; color: var(--text);"><strong>Einzelgespräch</strong> – einmalig, telefonisch, online oder persönlich</li>
       <li style="margin-bottom: 0.8rem; padding-left: 1rem; border-left: 2px solid var(--gold); font-family: Arial, sans-serif; font-size: 0.9rem; color: var(--text);"><strong>Coaching-Reihe</strong> – mehrere Sitzungen, strukturierte Begleitung</li>
